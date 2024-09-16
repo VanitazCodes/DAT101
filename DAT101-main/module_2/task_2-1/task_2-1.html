@@ -7,6 +7,68 @@
 <body>
 <script>
   /* write your code below this line  🙂 */
+/*
+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+Question 1: Can we create variables and constants without assigning values to them? If not, why, and which
+ones (variables, constants, or both)?
+
+Answer: Both yes and no. We got "var" & "let" variables that we can create without assigning values. Reason being that they will automatically fill the blank space with
+"unidentified" variable. Letting you change the variable in the future, but constant does not allow for this as that would contradict it's task of being a constant. 
+Constants are suppose to hold value and not change. So by not having any values to hold onto it will give you an error.
+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+Question 2: Can we create variables and constants on the same line, or must we separate them onto different
+lines? If we can, how do we differentiate them?
+
+Answer: You cannot mix let, var or const together in one line. If multiple variables is needed, then you must the same declarations. Mixing something like "const" and "let"
+in one line will not work as these declarations work differently on their own.
+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+Question 3. Can we assign a new value to a constant later in the code? Try to explain why we can or cannot.
+
+Answer: No we can't since "const" is suppose to be holding it's value throughout the whole code. HOWEVER! if the value is an object or array, 
+then it's contents can be modified.
+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+Question 4. What happens if we create a variable without using the let or const commands? Now, add "use
+strict" to the very top of your script. Describe what you observe in the browser's "Inspect"
+window. You can learn more about "use strict" on W3Schools.
+
+Answer: I get a error message saying
+ "Uncaught ReferenceError: x is not defined
+    at task_2-1.html:41:3"
+
+*/
+
+/* 
+"use strict";
+x = 1; 
+console.log(x); 
+*/
+
+/*
+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+5. What are implicit and explicit variable declarations?
+
+Answer: Implicit variable declarations are valuables that hasn't specifically been declared to anything, so if you run it in strict mode, it will most likely give you an error
+as it's to help you not run using undeclared variables and helps with cleaner code.
+
+Explicit variables avoids those global variables UNintentionally and uses var, let and const. It's good practice to always declare for cleaner code and for people to understand.
+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+ */
+
+ let person = {
+firstName: "Mohammed",
+lastName: "Kagermanov",
+};
+
+const age = 22;
+var birthYear = 2002;
+
+console.log(person.firstName + '' + person.lastName);
+console.log("jeg er"+ " " + age + " år gammel og født i år " + birthYear);
+//Not sure if this is allowed, but instead of adding + " " I just added space inside the second string
 
 </script>
 </body>
