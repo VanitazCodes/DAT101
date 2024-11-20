@@ -9,9 +9,11 @@ export function initPrintOut(aDomElement) {
 }
 
 export function printOut(aText) {
-  aText = aText.replace(newLine, "");
+  aText = String(aText); 
+  aText = aText.replace(newLine, "<br/>");
+
   if (DOMTextOut.innerHTML.length !== 0) {
-    DOMTextOut.innerHTML += newLine;
+      DOMTextOut.innerHTML += newLine;
   }
   DOMTextOut.innerHTML += aText;
 }

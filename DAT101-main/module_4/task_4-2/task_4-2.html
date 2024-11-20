@@ -10,8 +10,30 @@
       <span id="txtOut" style="white-space: nowrap"></span>
     </div>
     <ol>
-      <li>[Write the question here, and copy this for more questions]</li>
-      <p>[Write your answer here, and copy this for more answers]</p>
+      <li><b>What is an array? A short and concise answer is expected here!</b></li>
+      <p>An array is like a collection of stuff (values or objects) you want to keep together in one place, indexed by numbers starting at 0. Think of it as a row of lockers for your data basically.</p>
+
+      <li><b>What does it mean to "hardcode" when we talk about programming?</b></li>
+      <p>Hardcoding is when you write fixed values directly into your code, like writing "5" instead of making it a variable. It's cool for quick stuff but not great for flexibility later as things will become quite tedious.</p>
+
+      <li><b>Explain in plain text what happens in task 3, and how we can traverse (iterate) the array when we (humans) don't "know" how long the array is.</b></li>
+      <p>In task 3, we split a sentence into words using `.split(" ")`, creating an array. Then, we use `forEach` to go through each word, printing it with its index. If we don't know the array length, we use loops like `for`, `forEach`, or even `while`, which handle unknown lengths for us.</p>
+
+      <li><b>Why is it beneficial to store instances of a class in arrays, as in task 4?</b></li>
+      <p>Putting class instances in an array makes it easier to handle a bunch of similar objects at once. You can loop through them, filter them, or apply methods without needing separate variables for each one.</p>
+
+      <li><b>Try your best to explain the EWeekDays object from task 7. How do we use the "value" attribute, for example? In what way do "WeekDay", "Workdays", and "Weekends" differ from each other? If we wanted to create a new element "WorkoutDays", which would contain "Monday", "Wednesday", and "Thursday", how would it ideally look?</b></li>
+      <p>The `EWeekDays` object groups days with their names and numeric values. The "value" is like a unique code (often used for grouping or some stuff). "WeekDay" entries are single days, "Workdays" combine multiple days into one group, and "Weekends" do the same for Saturday and Sunday. A "WorkoutDays" element would look like this:</p>
+      <p><code>WorkoutDays: { value: 0x01 + 0x04 + 0x08, name: "WorkoutDays" }</code></p>
+
+      <li><b>In task 8, we will use a "callback" routine when sorting. Explain how such a "callback" routine works.</b></li>
+      <p>A callback is a function you pass into another function (like `sort`). In sorting, it takes two items, compares them, and tells the sorting function how to order them (e.g., ascending or descending).</p>
+
+      <li><b>What happens in the sorting routines you have created? Try to explain how the array can figure out if an element should come before or after another. The best way to answer this is to actually print both parameters each time the sorting routine runs.</b></li>
+      <p>The sorting function compares two items at a time (`a` and `b`) using the callback. If it returns a negative number, `a` comes before `b`. Positive means `b` comes before `a`, and 0 means they're equal.</p>
+
+      <li><b>In task 10, we will create an array with rows and columns. Explain what the first element of the array contains.</b></li>
+      <p>The first element of the array contains the first row, which itself is an array of elements for each column. So, if it's a 5x9 grid, the first element looks something like..: <code>["Row 0, Col 0", "Row 0, Col 1", ..., "Row 0, Col 8"]</code>.</p>
     </ol>
     <script type="module" src="./task_4-2.mjs" defer></script>
   </body>
