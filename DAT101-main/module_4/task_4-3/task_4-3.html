@@ -97,8 +97,27 @@
   </div>
 </fieldset>
 <ol>
-  <li>[Write the question here, and copy this for more questions]</li>
-  <p>[Write your answer here, and copy this for more answers]</p>
+  <li><b>In this assignment, we use the DOM. Explain how this library can help us develop interactive web pages.</b></li>
+  <p>The DOM is like a control panel for your webpage. It lets you mess around with HTML elements using JavaScript, so you can make your page way cooler and more interactive. You can update text, add animations, or even create elements out of thin air. Basically, it's what turns a boring static page into something fun and alive.</p>
+
+  <li><b>What is an event? Simply explain what happens when we add an event listener to an object.</b></li>
+  <p>An event is just something that happens, like clicking a button, typing in a field, or even just moving your mouse. When you add an event listener, it's like saying, “Hey, JavaScript, keep an eye out for this thing happening.” When the event actually happens, it triggers a function, so you can respond to it—like showing an alert, updating some text, or anything else you wanna do.</p>
+
+  <li><b>Sometimes we need to use an event object to get data from the event. Explain how this event object is structured, don't explain all functions or attributes. Try to explain, for example, how to retrieve data from a keyboard or mouse.</b></li>
+  <p>The event object is like a cheat sheet that tells you everything about what just happened. For example:
+    <ul>
+      <li>With a keyboard event, `event.key` tells you which key was pressed (like “Enter” or “A”).</li>
+      <li>With a mouse event, you can use `event.clientX` and `event.clientY` to find out where the click happened on the screen.</li>
+    </ul>
+    It's super handy because you don't have to guess what the user did—the event object has all the details you need.</p>
+
+  <li><b>Explain the main difference between DOM id and DOM name. Can we have identical IDs?</b></li>
+  <p>IDs and names are kinda similar but do different things:
+    <ul>
+      <li>**IDs** are like social security numbers—totally unique and only one element can have a specific ID on a page.</li>
+      <li>**Names** are more like tags you can give to a group of elements, like form inputs, so they're easier to handle together.</li>
+    </ul>
+    If you try to use the same ID twice, you'll confuse JavaScript, and things might break. So yeah, keep IDs unique!</p>
 </ol>
 <script type="module" src="./task_4-3.mjs" defer></script>
 </body>
